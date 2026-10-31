@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mentor de Inteligência Artificial</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <header>
+            <h1>🤖 Mentor de IA</h1>
+            <p>Descubra profissões de acordo com seus interesses!</p>
+        </header>
+
+        <section class="caixa">
+
+            <h2>Converse com seu mentor</h2>
+
+            <label for="interesses">
+                Quais são seus interesses?
+            </label>
+
+            <textarea
+                id="interesses"
+                placeholder="Exemplo: gosto de viajar, estudar e jogar..."
+            ></textarea>
+
+            <button id="botaoEnviar">
+                Enviar mensagem
+            </button>
+
+            <div id="resposta" class="resposta">
+                <p>Olá! Sou seu mentor de carreiras.</p>
+                <p>Conte um pouco sobre seus interesses!</p>
+            </div>
+
+        </section>
+
+        <section class="caixa">
+
+            <h2>🛡️ Guardrails</h2>
+
+            <p>Regras de segurança do mentor:</p>
+
+            <ul>
+                <li>Ser educado e respeitoso.</li>
+                <li>Indicar profissões reais.</li>
+                <li>Evitar preconceitos.</li>
+                <li>Não solicitar dados pessoais.</li>
+                <li>Fornecer respostas objetivas.</li>
+            </ul>
+
+        </section>
+
+        <section class="caixa">
+
+            <h2>📊 Consumo de tokens</h2>
+
+            <div class="estatisticas">
+
+                <div>
+                    <h3 id="tokensEntrada">0</h3>
+                    <p>Tokens de entrada</p>
+                </div>
+
+                <div>
+                    <h3 id="tokensSaida">0</h3>
+                    <p>Tokens de saída</p>
+                </div>
+
+                <div>
+                    <h3 id="tokensTotal">0</h3>
+                    <p>Total de tokens</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="caixa">
+
+            <h2>💰 Simulador de custos</h2>
+
+            <label for="precoEntrada">
+                Preço por milhão de tokens de entrada (R$):
+            </label>
+
+            <input
+                type="number"
+                id="precoEntrada"
+                value="1"
+                min="0"
+                step="0.01"
+            >
+
+            <label for="precoSaida">
+                Preço por milhão de tokens de saída (R$):
+            </label>
+
+            <input
+                type="number"
+                id="precoSaida"
+                value="2"
+                min="0"
+                step="0.01"
+            >
+
+            <button id="botaoCalcular">
+                Calcular custo
+            </button>
+
+            <h3 id="custo">Custo estimado: R$ 0,00</h3>
+
+        </section>
+
+        <footer>
+            <p>Projeto educativo de Inteligência Artificial</p>
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

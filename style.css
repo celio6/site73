@@ -1,0 +1,144 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #10172a, #263b63);
+    color: white;
+    min-height: 100vh;
+    padding: 25px;
+}
+
+.container {
+    max-width: 750px;
+    margin: auto;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    color: #75caff;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.caixa {
+    background: #1d2942;
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    box-shadow: 0 5px 15px #0005;
+}
+
+.caixa h2 {
+    color: #75caff;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin: 15px 0 8px;
+}
+
+textarea,
+input {
+    width: 100%;
+    padding: 13px;
+    border-radius: 8px;
+    border: 2px solid #506989;
+    font-size: 16px;
+    background: #f5f7fa;
+    color: #17243a;
+}
+
+textarea {
+    height: 110px;
+    resize: vertical;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 15px;
+    background: #1678e8;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #075bb8;
+}
+
+.resposta {
+    display: none;
+    margin-top: 20px;
+    background: #263854;
+    padding: 18px;
+    border-radius: 10px;
+    line-height: 1.7;
+    overflow-wrap: anywhere;
+}
+
+ul {
+    padding-left: 25px;
+    line-height: 2;
+}
+
+.estatisticas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    text-align: center;
+}
+
+.estatisticas div {
+    background: #263854;
+    padding: 18px 8px;
+    border-radius: 10px;
+}
+
+.estatisticas h3 {
+    color: #75caff;
+    font-size: 25px;
+}
+
+.estatisticas p {
+    font-size: 12px;
+    margin-top: 8px;
+}
+
+#custo {
+    margin-top: 20px;
+    color: #75caff;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #b8c8df;
+}
+
+@media (max-width: 500px) {
+    .estatisticas {
+        grid-template-columns: 1fr;
+    }
+
+    header h1 {
+        font-size: 27px;
+    }
+
+    .caixa {
+        padding: 18px;
+    }
+}
